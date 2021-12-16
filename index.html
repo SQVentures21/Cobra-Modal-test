@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="main.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+
+    <title>Cobra Casino</title>
+  
+</head>
+<body>
+    <img src="assets/mobile-new/cobra-logo.svg" alt="" class="logo-cobra" style="width:117px; height:64px;">
+    <div class="container">
+            <div class="flex background background-mobil">
+                    <div class="text"> 
+                        <h1>$777 <span class="text-slim">FIRST</span><br> 
+                            DEPOSIT BONUS <br>
+                        +250 <span class="text-slim">Free Spins</span>     
+                        </h1>
+                        <img  id="myBtn-modal" src="assets/mobile-new/button.svg" alt="" class="logo-buton" > 
+                        
+                    </div> 
+                  
+            </div>
+            
+           
+    
+  
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="registration">
+                        
+                        <div class="aff-landing--right">
+                            <div class="aff-landing__form--wrap">
+                                <img class="locales__icon aff-landing__form--lang" alt="{{$parent.$parent.$parent.currentLocale}}"
+                                    ng-src="{{$parent.$parent.$parent.CDN.SERVER + '/' + $parent.$parent.$parent.CDN.ASSETS_PREFIX}}/flags/rectangular/{{$parent.$parent.$parent.currentLocale}}.svg">
+                                <div class="aff-landing__form">
+                                    <div class="modal__header">
+                                        <div translate="frontend.links.welcome_to" translate-default="Welcome to"></div>
+                                        <b translate="frontend.links.cobracasino" translate-default="cobracasino"></b>
+                                        <casino-auth-social class="social--registr"></casino-auth-social>
+                                    </div>
+                                    <casino-form-registration columns="1" checkbox-after="1"></casino-form-registration>
+                                    <div class="modal__footer">
+                                        <div class="info-links">
+                                            <span translate="frontend.links.have_an_account"
+                                                translate-default="Already have an account?"></span>
+                                            <a href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()"
+                                            translate="frontend.links.login"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>    
+            </div>
+          
+          </div>
+
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn-modal");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+
+            </script>
+          
+          
+        <div class="parteners-icon">
+            <picture>
+                <source media="(max-width:700px)" srcset="assets/mobile-new/cobra-international-payments-mobile.webp">
+                <img src="assets/desk-new/cobra-international-payment-logos_desktop.webp" alt="">
+            </picture>
+    </div>
+            
+            
+            <div class="cards">
+
+                <div class="card">
+                    <picture >
+                        <source media="(max-width:700px)" srcset="assets/mobile/level1Mobile.webp">
+                     <img class="absolute" src="assets/desktop/level_1.webp" alt="picture1" style="width:82.4px; height:99px;" >
+                     </picture>
+                    <div class="mt-0">
+                        <p class="first">150%</p>
+                        <p class="second"> on your 1st deposit</p> 
+                        <p class="third colorFirst ">up to $750 + 250FS</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <picture >
+                        <source media="(max-width:400px)" srcset="assets/mobile/level2Mobile.webp">
+                    <img class="absolute" src="assets/desktop/level_2.webp" alt="picture2" style="width:82.4px; height:99px;" >
+                    </picture>
+                    <div class="mt-0 direction">
+                        <p class="first left">50%</p>
+                        <p class="second"> on your 2nd deposit</p> 
+                        <p class="third colorSecond">up to $600 + 50FS</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <picture >
+                        <source  media="(max-width:400px)"srcset="assets/mobile/level3Mobile.webp">
+                    <img class="absolute" src="assets/desktop/level_3.webp" alt="picture3" style="width:82.4px; height:99px;">
+                    </picture>
+                    <div class="mt-0 ">
+                        <p class="first">125%</p>
+                        <p class="second"> on your 3rd deposit</p> 
+                        <p class="third colorThird ">up to $750 + 250FS</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="flag-image container-smaller">  
+                <img src="assets/desk-new/hat+coins.webp" alt="Flag">
+           
+            </div> 
+            <div class="flex-items">
+                <ul>
+                    <li>
+                        <picture class="secured">
+                            <source media="(max-width:600px)" srcset="assets/mobile/over.webp">
+                            <img class="secured" src="assets/desktop/USP1.webp" alt="" style="width:110px; height:110px;" >
+                        </picture>
+                       
+                       
+                    </li>
+                    
+                </ul>
+                <ul>
+                    <li>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="assets/mobile/fast.webp">
+                            <img class="secured" src="assets/desktop/USP2.webp" alt=""  style="width:110px; height:110px;" >
+                        </picture>
+                       
+                       
+                    </li>
+                   
+                </ul>
+                <ul>
+                    <li>
+                      <picture>
+                            <source media="(max-width:600px)" srcset="assets/mobile/cashback.webp">
+                            <img  class="secured" src="assets/desktop/USP3.webp" alt=""  style="width:110px; height:110px;" >
+                        </picture>    
+                    </li>
+                    
+                </ul>
+
+                
+               
+                  
+            </div>
+
+            <div class="flex-payments">
+                <picture>
+                        <source media="(max-width:700px)" srcset="assets/mobile-new/AskGamblers-logo_mobile.svg" >
+                        <img src="assets/desk-new/AskGamblers-logo_desktop.svg" alt="" style="padding-bottom: 4px;"> 
+                </picture>
+                <br>
+                <picture>
+                        <source media="(max-width:700px)" srcset="assets/mobile-new/Casino-daddy-logo_mobile.svg">
+                        <img src="assets/desk-new/Casino-daddy-logo_desktop.svg" alt="">
+                </picture>
+            </div>
+           
+            <div class="logo-slider" ng-init="providers = [
+                                                                'netent', 'playngo', 'egt', 'yggdrasil', 'amatic', 'quickspin', 'betsoft', 'endorphina',
+                                                                 'pragmatic', 'relax','pushgaming','isoftbet', 'merkur','blueprint','evolution','playtech','authentic','ezugi','vivogaming','elk','habanero','casinotechnology','wazdan','thunderkick','augustgaming','felixgaming','belatra','platipus','evoplay','playson','booongo','1x2gaming','irondogstudio','leapgaming_white','booming','spinomenal','gameart','mrslotty'
+                                                            ]">
+                        <div class="logo-slider__list" data-uix-bxslider="hideControlOnEnd: true, infiniteLoop: false, maxSlides:30, adaptiveHeight:true, touchEnabled: false, moveSlides: 1">
+                            <a class="logo-slider__item" href="https://www.bgaming.com">
+                                <img ng-src="{{$root.CDN.SERVER}}/logos/providers/white/bgaming.svg"/>
+                            </a>
+                            <div class="logo-slider__item" ng-repeat="item in providers" data-notify-when-repeat-finished>
+                                <img ng-src="{{$root.CDN.SERVER}}/logos/providers/white/{{item}}.svg"/>
+                            </div>
+                        </div>
+            </div>
+            
+    
+    </div> 
+            <div>
+
+                <p class="footer-text">
+                   
+                    Copyright © 2020 Cobracasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao, with registration number 152125 and registered address at Julianaplein 36, Willemstad, Curaçao, and its wholly-owned subsidiary,
+                        Strukin Limited registered address Pavlov Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus. Dama N.V. is licensed and <span class="bottom-align">regulated by Antillephone  N.V. (license no. 8048/JAZ2020-013). It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling. All the payments related to Paysafe are processed through Dama N.V.</span> </span> </span> 
+                    </span>
+                </p>
+            </div>
+    </div>
+
+     
+</body>
+</html>
